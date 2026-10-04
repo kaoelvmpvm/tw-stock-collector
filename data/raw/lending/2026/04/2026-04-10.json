@@ -3467,7 +3467,7 @@
     },
     {
       "stock_id": "1721",
-      "stock_name": "三晃",
+      "stock_name": "國慶科技",
       "margin_prev_balance": "0",
       "margin_sell": "0",
       "margin_buy": "0",
@@ -5239,8 +5239,8 @@
       "daily_return": 0,
       "daily_adjust": 0,
       "lending_balance": 0,
-      "next_day_available": 0,
-      "note": "V ",
+      "next_day_available": 381480,
+      "note": " ",
       "date": "2026-04-10",
       "lending_change": 0,
       "type": "twse"
@@ -18707,7 +18707,7 @@
     },
     {
       "stock_id": "6949",
-      "stock_name": "沛爾生醫-創",
+      "stock_name": "沛爾生醫*-創",
       "margin_prev_balance": "0",
       "margin_sell": "0",
       "margin_buy": "0",
