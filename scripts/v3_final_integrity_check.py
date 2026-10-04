@@ -28,7 +28,23 @@ from collections import defaultdict
 from datetime import datetime, timedelta
 from pathlib import Path
 
-from services.common.utils.date_helper import is_trading_day
+HOLIDAYS_2026 = {
+    "2026-01-01",
+    "2026-02-12","2026-02-13","2026-02-16","2026-02-17","2026-02-18","2026-02-19","2026-02-20",
+    "2026-02-27",
+    "2026-04-03","2026-04-06",
+    "2026-05-01",
+    "2026-06-19",
+    "2026-07-10",
+    "2026-09-25","2026-09-28",
+    "2026-10-09","2026-10-26",
+    "2026-12-25",
+}
+
+def is_trading_day(date_str: str) -> bool:
+    d = datetime.strptime(date_str, "%Y-%m-%d").date()
+    return d.weekday() < 5 and date_str not in HOLIDAYS_2026
+
 
 START = "2026-04-01"
 END = "2026-10-02"
