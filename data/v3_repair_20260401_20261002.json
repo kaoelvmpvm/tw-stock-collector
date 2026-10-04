@@ -1,0 +1,220 @@
+{
+  "generated_at": "2026-10-04T11:40:49",
+  "scope": "V3 backtest data gap repair 2026-04-01..2026-10-02",
+  "closed_dates": [
+    "2026-04-03",
+    "2026-04-06",
+    "2026-05-01",
+    "2026-06-19",
+    "2026-07-10",
+    "2026-09-25",
+    "2026-09-28"
+  ],
+  "removed_closed_date_artifacts": [
+    "data/raw/price/2026/04/2026-04-03.json",
+    "data/raw/price/2026/04/2026-04-03.json.md5",
+    "data/raw/price/2026/04/2026-04-03-report.md",
+    "data/raw/margin/2026/04/2026-04-03.json",
+    "data/raw/margin/2026/04/2026-04-03.json.md5",
+    "data/raw/margin/2026/04/2026-04-03-report.md",
+    "data/raw/price/2026/04/2026-04-06.json",
+    "data/raw/price/2026/04/2026-04-06.json.md5",
+    "data/raw/price/2026/04/2026-04-06-report.md",
+    "data/raw/margin/2026/04/2026-04-06.json",
+    "data/raw/margin/2026/04/2026-04-06.json.md5",
+    "data/raw/margin/2026/04/2026-04-06-report.md",
+    "data/raw/margin/2026/05/2026-05-01.json",
+    "data/raw/margin/2026/05/2026-05-01.json.md5",
+    "data/raw/margin/2026/05/2026-05-01-report.md",
+    "data/raw/price/2026/06/2026-06-19.json",
+    "data/raw/price/2026/06/2026-06-19.json.md5",
+    "data/raw/price/2026/06/2026-06-19-report.md",
+    "data/raw/margin/2026/06/2026-06-19.json",
+    "data/raw/margin/2026/06/2026-06-19.json.md5",
+    "data/raw/margin/2026/06/2026-06-19-report.md",
+    "data/raw/price/2026/07/2026-07-10.json",
+    "data/raw/price/2026/07/2026-07-10.json.md5",
+    "data/raw/price/2026/07/2026-07-10-report.md",
+    "data/raw/margin/2026/07/2026-07-10.json",
+    "data/raw/margin/2026/07/2026-07-10.json.md5",
+    "data/raw/margin/2026/07/2026-07-10-report.md",
+    "data/raw/price/2026/09/2026-09-25.json",
+    "data/raw/price/2026/09/2026-09-25.json.md5",
+    "data/raw/price/2026/09/2026-09-25-report.md",
+    "data/raw/margin/2026/09/2026-09-25.json",
+    "data/raw/margin/2026/09/2026-09-25.json.md5",
+    "data/raw/margin/2026/09/2026-09-25-report.md",
+    "data/raw/price/2026/09/2026-09-28.json",
+    "data/raw/price/2026/09/2026-09-28.json.md5",
+    "data/raw/price/2026/09/2026-09-28-report.md",
+    "data/raw/margin/2026/09/2026-09-28.json",
+    "data/raw/margin/2026/09/2026-09-28.json.md5",
+    "data/raw/margin/2026/09/2026-09-28-report.md"
+  ],
+  "price": [
+    {
+      "date": "2026-04-14",
+      "twse": 1082,
+      "tpex": 888,
+      "total": 1970,
+      "attempt": 1
+    },
+    {
+      "date": "2026-05-04",
+      "twse": 1084,
+      "tpex": 888,
+      "total": 1972,
+      "attempt": 1
+    },
+    {
+      "date": "2026-05-14",
+      "twse": 1086,
+      "tpex": 888,
+      "total": 1974,
+      "attempt": 1
+    },
+    {
+      "date": "2026-06-09",
+      "twse": 1090,
+      "tpex": 888,
+      "total": 1978,
+      "attempt": 2
+    },
+    {
+      "date": "2026-06-15",
+      "twse": 1090,
+      "tpex": 888,
+      "total": 1978,
+      "attempt": 1
+    },
+    {
+      "date": "2026-06-26",
+      "twse": 1089,
+      "tpex": 888,
+      "total": 1977,
+      "attempt": 1
+    },
+    {
+      "date": "2026-07-13",
+      "twse": 1090,
+      "tpex": 888,
+      "total": 1978,
+      "attempt": 1
+    },
+    {
+      "date": "2026-07-17",
+      "twse": 1091,
+      "tpex": 888,
+      "total": 1979,
+      "attempt": 1
+    },
+    {
+      "date": "2026-07-23",
+      "twse": 1091,
+      "tpex": 888,
+      "total": 1979,
+      "attempt": 1
+    },
+    {
+      "date": "2026-08-12",
+      "twse": 1096,
+      "tpex": 888,
+      "total": 1984,
+      "attempt": 1
+    },
+    {
+      "date": "2026-08-21",
+      "twse": 1093,
+      "tpex": 888,
+      "total": 1981,
+      "attempt": 1
+    },
+    {
+      "date": "2026-09-07",
+      "twse": 1095,
+      "tpex": 888,
+      "total": 1983,
+      "attempt": 1
+    },
+    {
+      "date": "2026-09-10",
+      "twse": 1092,
+      "tpex": 888,
+      "total": 1980,
+      "attempt": 1
+    },
+    {
+      "date": "2026-10-01",
+      "twse": 1094,
+      "tpex": 888,
+      "total": 1982,
+      "attempt": 1
+    }
+  ],
+  "institutional": [
+    {
+      "date": "2026-04-07",
+      "twse": 1052,
+      "tpex": 768,
+      "total": 1820,
+      "attempt": 1
+    },
+    {
+      "date": "2026-04-17",
+      "twse": 1067,
+      "tpex": 788,
+      "total": 1855,
+      "attempt": 1
+    },
+    {
+      "date": "2026-06-04",
+      "twse": 1069,
+      "tpex": 802,
+      "total": 1871,
+      "attempt": 1
+    },
+    {
+      "date": "2026-08-05",
+      "twse": 1072,
+      "tpex": 799,
+      "total": 1871,
+      "attempt": 1
+    },
+    {
+      "date": "2026-08-17",
+      "twse": 1079,
+      "tpex": 791,
+      "total": 1870,
+      "attempt": 1
+    },
+    {
+      "date": "2026-08-27",
+      "twse": 1076,
+      "tpex": 783,
+      "total": 1859,
+      "attempt": 1
+    },
+    {
+      "date": "2026-08-31",
+      "twse": 1077,
+      "tpex": 782,
+      "total": 1859,
+      "attempt": 1
+    },
+    {
+      "date": "2026-09-16",
+      "twse": 1067,
+      "tpex": 765,
+      "total": 1832,
+      "attempt": 1
+    },
+    {
+      "date": "2026-09-23",
+      "twse": 1067,
+      "tpex": 780,
+      "total": 1847,
+      "attempt": 1
+    }
+  ],
+  "failures": []
+}
