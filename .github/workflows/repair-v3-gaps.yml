@@ -42,7 +42,8 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add data/raw/ data/v3_repair_20260401_20261002.json
+          git add data/raw/
+          git add -f data/v3_repair_20260401_20261002.json
           if git diff --staged --quiet; then
             echo "No repair changes to commit"
           else
