@@ -19,7 +19,7 @@ on:
       types:
         description: '資料類型 (用空格分隔)'
         required: false
-        default: 'price institutional margin lending top20_volume'
+        default: 'price institutional margin lending'
         type: string
       batch_size:
         description: '批次大小（每批處理天數）'
@@ -111,7 +111,7 @@ jobs:
             -v ${{ github.workspace }}/data:/app/data \
             -v ${{ github.workspace }}/logs:/app/logs \
             ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/data-collector:latest \
-            /app/app/backfill.py \
+            /app/services/data-collector/app/backfill.py \
               --start ${START_DATE} \
               --end ${END_DATE} \
               --types ${BACKFILL_TYPES} \
@@ -255,6 +255,7 @@ jobs:
 
       - name: Create issue on failure
         if: failure()
+        continue-on-error: true
         uses: actions/github-script@v7
         with:
           script: |
