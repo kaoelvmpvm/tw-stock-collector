@@ -1,0 +1,51 @@
+name: Repair V3 Data Gaps
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'scripts/repair_v3_gaps.py'
+      - '.github/workflows/repair-v3-gaps.yml'
+  workflow_dispatch:
+
+jobs:
+  repair:
+    name: Repair known V3 gaps
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          lfs: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Repair only known data gaps
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: python scripts/repair_v3_gaps.py
+
+      - name: Commit repaired data
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/raw/ data/v3_repair_20260401_20261002.json
+          if git diff --staged --quiet; then
+            echo "No repair changes to commit"
+          else
+            git commit -m "data: repair V3 backtest gaps"
+            git push
+          fi
